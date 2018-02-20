@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include header.html %}
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/index.css">
+  </head>
+  <body>
+    {% include top-navbar.html %}
+    <!-- content area -->
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+            <!-- categories -->
+        </div>
+        <!-- navside -->
+        <div class="d-none d-xl-block col-xl-2 bd-toc">
+           <ul class="section-nav" style="border-left: 1.3px solid rgba(0,0,0,.1);">
+            {% for mn in page.menu %}
+              <li class="toc-entry toc-h2">
+                <a href="#{{mn.href}}">{{mn.name}}</a>
+                {%- if mn.subs -%}
+                {% for mi in mn.subs %}
+                  <ul>
+                    <li class="toc-entry toc-h2"><a href="#{{mi.href}}">{{mi.name}}</a></li>
+                  </ul>
+                {% endfor %}
+                {%- endif -%}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <!-- post area -->
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content blog-post" role="main">
+          <h1 class="blog-post-title">{{page.title}}</h1>
+          <div class="row border-bottom border-gray mt-4">
+            <div class="col">
+              <p class="media-body pb-3 mb-0 small lh-125">
+                <i class="fa fa-tags"></i>
+                  &nbsp;Tags:
+                  {% for tag in page.tags %}
+                    <span class="badge badge-pill badge-dark ml-2"><big>{{tag}}</big></span>
+                  {% endfor %}
+                </p>
+            </div>
+            <div class="col">
+              <p class="blog-post-metah6 float-left"><small><i class="fa fa-calendar-times-o">&nbsp;</i>{{page.date | date_to_long_string}} by </small><a href="#" class="badge badge-pill badge-light"><i class="fa fa-star">&nbsp;</i>{{site.author}}</a></p>
+            </div>
+          </div>
+          {{ content }}
+        </main>
+      </div>
+    </div>
+    {% include footer.html %}
+    <script src="{{ site.baseurl }}/assets/js/holder.min.js"></script>
+    <script>
+    Holder.addTheme('thumb', {
+    bg: '#55595c',
+    fg: '#eceeef',
+    text: 'Thumbnail'
+    });
+    </script>
+  </body>
+</html>
