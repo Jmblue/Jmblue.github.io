@@ -27,8 +27,8 @@ nav ol {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   
-  /* == */
-  width: 250px;
+  /* == width: 250px;*/
+  width: 100%;
   /* == */
 }
 .mcd-menu li {
