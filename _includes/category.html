@@ -1,106 +1,35 @@
-<nav class="cate_side_">
-    <ul class="mcd-menu">
-        <li>
-            <a href="">
-                <i class="fa fa-home"></i>
-                <strong>主页</strong>
-                <small>Home &nbsp;Page</small>
-            </a>
-        </li>
-        <li>
-            <a href="" class="active">
-                <i class="fa fa-edit"></i>
-                <strong>Java</strong>
-                <small>Java 程序设计</small>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <i class="fa fa-gift"></i>
-                <strong>JavaScript</strong>
-                <small>JavaScript 程序设计</small>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <i class="fa fa-globe"></i>
-                <strong>Python</strong>
-                <small>Python 程序设计</small>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <i class="fa fa-comments-o"></i>
-                <strong>SQL</strong>
-                <small>SQL 查询语言</small>
-            </a>
-            <ul class="ul-transparent">
-                <li>
-                    <a href="#">
-                        <i class="fa fa-globe"></i>Oracle DB</a>
-                </li>
-                <!-- <li>
-                    <a href="#">
-                        <i class="fa fa-group"></i>Our Team</a>
-                    <ul class="ul-transparent">
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-female"></i>Leyla Sparks</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-male"></i>Gleb Ismailov</a>
-                            <ul class="ul-transparent">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-leaf"></i>About</a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-tasks"></i>Skills</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-female"></i>Viktoria Gibbers</a>
-                        </li>
-                    </ul>
-                </li> -->
-                <li>
-                    <a href="#">
-                        <i class="fa fa-trophy"></i>MYSQL DB</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-certificate"></i>DB2</a>
-                </li>
-            </ul>
-        </li>
-        <!-- <li>
-            <a href="">
-                <i class="fa fa-picture-o"></i>
-                <strong>Portfolio</strong>
-                <small>sweet home</small>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <i class="fa fa-envelope-o"></i>
-                <strong>Contacts</strong>
-                <small>drop a line</small>
-            </a>
-        </li> -->
-        <!-- <li class="float">
-            <a class="search">
-                <input type="text" value="search ...">
-                <button>
-                    <i class="fa fa-search"></i>
-                </button>
-            </a>
-            <a href="" class="search-mobile">
-                <i class="fa fa-search"></i>
-            </a>
-        </li> -->
-    </ul>
-</nav>
+<div class="left-category-menu">
+	<div class="logo">
+		<!-- <div><i class="fa fa-github">&nbsp;</i>Github/MultiAccount</div> -->
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="/"><i class="fa fa-home">&nbsp;</i>Home</a></li>
+				<li class="breadcrumb-item active"><a href="#"><i class="fa fa-github">&nbsp;</i>Github</a></li>
+			</ol>
+		</nav>
+	</div>
+	<div class="accordion">
+		<div class="section">
+			<input type="radio" name="accordion-1" id="section-1" checked="checked"/>
+			<label for="section-1"><span class="fa fa-coffee fa-lg">&nbsp;Java Program</span></label>
+			<div class="content">
+				<ul>
+					<li><i class="fa fa-inbox"></i><span>Inbox</span></li>
+					<li><i class="fa fa-share"></i><span>Sent    </span></li>
+					<li><i class="fa fa-archive"></i><span>Archive</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="section">
+			<input type="radio" name="accordion-1" id="section-2" value="toggle"/>
+			<label for="section-2"><span class="fa fa-github fa-lg">&nbsp;Github</span></label>
+			<div class="content">
+				<ul>
+					<li><i class="fa fa-cog"></i><span>System</span></li>
+					<li><i class="fa fa-group"></i><span>Users    </span></li>
+					<li><i class="fa fa-sitemap"></i><span>Visitation</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
