@@ -5,9 +5,9 @@ kramdown:
   auto_ids: true
 baseurl: ""
 encoding: UTF-8
-title: 一只猪-.-
+title: 一只猪
 email: jworkerr@outlook.com
-author: JW.(一只猪-.-)
+author: J-Mblue
 cdn:
   # See https://www.srihash.org for info on how to generate the hashes
   css: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
