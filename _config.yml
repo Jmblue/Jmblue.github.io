@@ -18,3 +18,54 @@ cdn:
   jquery_hash: "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
   popper: "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
   popper_hash: "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+# customer
+bg_colors:
+  - bg-light
+top_menu:
+  - name: java
+    color: a57238
+    title: Java编程
+    icon: coffee
+    items:
+      - name: Java基础知识
+        description: 记录Java基础知识相关的内容...
+      - name: Java多线程
+        description: 关于Java多项成相关的文章...
+      - name: Java高并发
+        description: 记录Java高并发处理相关的知识和文章...
+      - name: Java网络编程
+        description: 关于Java网络编程NIO，BIO，AIO...
+      - name: Java集合框架
+        description: 记录Java集合框架相关的知识点和应用
+      - name: Java8新特性
+        description: 关于Java8的新特性
+      - name: Java9新特性
+        description: 关于Java9的新特性
+  - name: database
+    color: f70f0f
+    title: Database
+    icon: database
+    items:
+      - name: MySQL基础知识
+        description: 记录MySQL Server基础知识相关的内容...
+      - name: Oracle基础知识
+        description: 关于Oracle Database多项成相关的文章...
+  - name: spring
+    color: 3cad06
+    title: Spring
+    icon: leaf
+    items:
+      - name: Java基础知识
+        description: 记录Java基础知识相关的内容...
+      - name: Java多线程
+        description: 关于Java多项成相关的文章...
+      - name: Java高并发
+        description: 记录Java高并发处理相关的知识和文章...
+      - name: Java网络编程
+        description: 关于Java网络编程NIO，BIO，AIO...
+      - name: Java集合框架
+        description: 记录Java集合框架相关的知识点和应用
+      - name: Java8新特性
+        description: 关于Java8的新特性
+      - name: Java9新特性
+        description: 关于Java9的新特性
